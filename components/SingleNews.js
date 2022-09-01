@@ -29,7 +29,7 @@ const SingleNews = ({ item, index, darkTheme }) => {
       <View
         style={{
           ...styles.description,
-          backgroundColor: darkTheme ? "#282C35" : "white",
+          backgroundColor: darkTheme ? "black" : "white",
         }}
       >
         <Text style={{ ...styles.title, color: darkTheme ? "white" : "black" }}>
@@ -58,7 +58,7 @@ const SingleNews = ({ item, index, darkTheme }) => {
             '{item?.content?.slice(0, 45)}...'
           </Text>
           <Text style={{ fontSize: 17, fontWeight: "bold", color: "white" }}>
-            Read More
+            Read More...
           </Text>
         </TouchableOpacity>
       </ImageBackground>
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     width: windowWidth,
     position: "absolute",
     bottom: 0,
-    backgroundColor: "#d7be69",
+    backgroundColor: "#4285f4",
     justifyContent: "center",
     paddingHorizontal: 20,
   },

@@ -10,7 +10,7 @@ function App() {
     <View
       style={{
         ...styles.container,
-        backgroundColor: darkTheme ? "#282C35" : "white",
+        backgroundColor: darkTheme ? "black" : "white",
       }}
     >
       <InshortTabs />

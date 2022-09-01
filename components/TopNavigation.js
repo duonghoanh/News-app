@@ -13,7 +13,7 @@ const TopNavigation = ({ index, setIndex }) => {
     <View
       style={{
         ...styles.container,
-        backgroundColor: darkTheme ? "#282C35" : "white",
+        backgroundColor: darkTheme ? "#07080b" : "white",
       }}
     >
       {index === 0 ? (
@@ -27,7 +27,7 @@ const TopNavigation = ({ index, setIndex }) => {
             <MaterialCommunityIcons
               name="theme-light-dark"
               size={24}
-              color="#007FFF"
+              color="#ea4335"
             />
           </Text>
         </TouchableOpacity>
@@ -36,17 +36,17 @@ const TopNavigation = ({ index, setIndex }) => {
           style={styles.left}
           onPress={() => setIndex(index === 0 ? 1 : 0)}
         >
-          <SimpleLineIcons name="arrow-left" size={15} color="#007FFF" />
+          <SimpleLineIcons name="arrow-left" size={15} color="#ea4335" />
           <Text
             style={{ ...styles.text, color: darkTheme ? "lightgrey" : "black" }}
           >
-            Discover
+            Explore
           </Text>
         </TouchableOpacity>
       )}
 
       <Text style={{ ...styles.center, color: darkTheme ? "white" : "black" }}>
-        {index ? "All News" : "Discover"}
+        {index ? "News" : "Explore"}
       </Text>
       {index ? (
         <TouchableOpacity
@@ -54,7 +54,7 @@ const TopNavigation = ({ index, setIndex }) => {
           onPress={() => fetchNews("general")}
         >
           <Text style={styles.text}>
-            <AntDesign name="reload1" size={24} color="#007FFF" />
+            <AntDesign name="reload1" size={24} color="#ea4335" />
           </Text>
         </TouchableOpacity>
       ) : (
@@ -65,9 +65,9 @@ const TopNavigation = ({ index, setIndex }) => {
           <Text
             style={{ ...styles.text, color: darkTheme ? "white" : "black" }}
           >
-            All News
+            News
           </Text>
-          <SimpleLineIcons name="arrow-right" size={15} color="#007FFF" />
+          <SimpleLineIcons name="arrow-right" size={15} color="#ea4335" />
         </TouchableOpacity>
       )}
     </View>
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
   center: {
     paddingBottom: 6,
-    borderBottomColor: "#007FFF",
+    borderBottomColor: "#ea4335",
     borderBottomWidth: 5,
     borderRadius: 10,
     fontSize: 16,
